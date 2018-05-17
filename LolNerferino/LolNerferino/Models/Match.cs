@@ -1,12 +1,12 @@
 ﻿using System;
-using SQLite;
+//using SQLite;
 
 namespace LolNerferino.Models
 {
     public class Match
     {
-        [AutoIncrement]
-        [PrimaryKey]
+        //[AutoIncrement]
+        //[PrimaryKey]
         public int Id { get; set; }
 
         public string Cs { get; set; }

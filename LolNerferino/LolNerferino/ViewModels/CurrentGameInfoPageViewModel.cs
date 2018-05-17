@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using LolApi.Models;
-using LolNerferino.Annotations;
+//using LolNerferino.Annotations;
 
 namespace LolNerferino.ViewModels
 {
@@ -23,7 +23,7 @@ namespace LolNerferino.ViewModels
 
         public event PropertyChangedEventHandler PropertyChanged;
 
-        [NotifyPropertyChangedInvocator]
+        //[NotifyPropertyChangedInvocator]
         protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));

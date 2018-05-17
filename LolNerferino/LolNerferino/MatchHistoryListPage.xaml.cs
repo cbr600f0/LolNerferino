@@ -30,9 +30,9 @@ namespace LolNerferino
 
         private async void MatchHistoryListPage_OnAppearing(object sender, EventArgs e)
         {
-            var conn = await Database.GetConnectionAsync();
-            _viewModel.Matches = await conn.Table<Match>().ToListAsync();
-            _viewModel.Matches.Reverse();
+            //var conn = await Database.GetConnectionAsync();
+            //_viewModel.Matches = await conn.Table<Match>().ToListAsync();
+            //_viewModel.Matches.Reverse();
         }
     }
 }
