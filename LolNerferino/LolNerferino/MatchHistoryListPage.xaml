@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:valueConverters="clr-namespace:LolNerferino.ValueConverters;assembly=LolNerferino"
+             x:Class="LolNerferino.MatchHistoryListPage"
+             Appearing="MatchHistoryListPage_OnAppearing">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <valueConverters:TimeSpanToStringConverter x:Key="TimeSpanToStringConverter" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ListView ItemsSource="{Binding Matches}"
+              x:Name="ListView"
+              HorizontalOptions="FillAndExpand"
+              VerticalOptions="FillAndExpand"
+              SizeChanged="ListView_OnSizeChanged">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <StackLayout Orientation="Horizontal">
+                        <Grid BackgroundColor="{Binding ResultColor}">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="66*" />
+                                <RowDefinition Height="34*" />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="100*" />
+                                <ColumnDefinition Width="285*" />
+                            </Grid.ColumnDefinitions>
+                            <!--The champion thumbnail should come below this line.-->
+                            <Image Source="annie.jpg"
+                                   Grid.RowSpan="2"
+                                   Grid.Column="0"
+                                   Aspect="Fill"
+                                   HorizontalOptions="FillAndExpand" />
+                            <Grid Grid.Row="0"
+                                  Grid.Column="1"
+                                  Padding="3"
+                                  BackgroundColor="White">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="27*" />
+                                    <RowDefinition Height="27*" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="70*" />
+                                    <ColumnDefinition Width="70*" />
+                                    <ColumnDefinition Width="150*" />
+                                </Grid.ColumnDefinitions>
+                                <Label Text="{Binding Time, Converter={StaticResource TimeSpanToStringConverter}}"
+                                       BackgroundColor="Black"
+                                       TextColor="White"
+                                       Grid.Row="0"
+                                       Grid.Column="0"
+                                       Margin="0"
+                                       HorizontalTextAlignment="Center"
+                                       VerticalTextAlignment="Center" />
+                                <Label Text="{Binding KDA}"
+                                       BackgroundColor="Black"
+                                       TextColor="White"
+                                       Grid.Row="0"
+                                       Grid.Column="1"
+                                       Margin="0"
+                                       HorizontalTextAlignment="Center"
+                                       VerticalTextAlignment="Center" />
+                                <Label Text="{Binding Map}"
+                                       BackgroundColor="Black"
+                                       TextColor="White"
+                                       Grid.Row="0"
+                                       Grid.Column="2"
+                                       Margin="0"
+                                       HorizontalTextAlignment="Center"
+                                       VerticalTextAlignment="Center" />
+                                <Label Text="{Binding Cs}"
+                                       BackgroundColor="Black"
+                                       TextColor="White"
+                                       Grid.Row="1"
+                                       Grid.Column="0"
+                                       Margin="0"
+                                       HorizontalTextAlignment="Center"
+                                       VerticalTextAlignment="Center" />
+                                <Label Text="{Binding Ratio}"
+                                       BackgroundColor="Black"
+                                       TextColor="White"
+                                       Grid.Row="1"
+                                       Grid.Column="1"
+                                       Margin="0"
+                                       HorizontalTextAlignment="Center"
+                                       VerticalTextAlignment="Center" />
+                                <Label Text="{Binding GameMode}"
+                                       BackgroundColor="Black"
+                                       TextColor="White"
+                                       Grid.Row="1"
+                                       Grid.Column="2"
+                                       Margin="0"
+                                       HorizontalTextAlignment="Center"
+                                       VerticalTextAlignment="Center" />
+                            </Grid>
+                            <!--The item build should be below this line-->
+                            <Grid Grid.Row="1"
+                                  Grid.Column="1">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Image Source="rylais.png"
+                                       Grid.Column="0"
+                                       Aspect="Fill"
+                                       HorizontalOptions="FillAndExpand" />
+                                <Image Source="abyssal.png"
+                                       Grid.Column="1"
+                                       Aspect="Fill"
+                                       HorizontalOptions="FillAndExpand" />
+                                <Image Source="sorcererboots.jpg"
+                                       Grid.Column="2"
+                                       Aspect="Fill"
+                                       HorizontalOptions="FillAndExpand" />
+                                <Image Source="zhonyas.jpg"
+                                       Grid.Column="3"
+                                       Aspect="Fill"
+                                       HorizontalOptions="FillAndExpand" />
+                                <Image Source="morellonomicon.jpg"
+                                       Grid.Column="4"
+                                       Aspect="Fill"
+                                       HorizontalOptions="FillAndExpand" />
+                                <Image Source="liandrystorment.jpg"
+                                       Grid.Column="5"
+                                       Aspect="Fill"
+                                       HorizontalOptions="FillAndExpand" />
+                                <Image Source="trinkedward.png"
+                                       Grid.Column="6"
+                                       Aspect="Fill"
+                                       HorizontalOptions="FillAndExpand" />
+                            </Grid>
+                        </Grid>
+                    </StackLayout>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+</ContentPage>

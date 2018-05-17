@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2000
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LolNerferino.Android", "LolNerferino\LolNerferino.Android\LolNerferino.Android.csproj", "{2C50421E-53C0-4BC3-B1C1-55DAC3066C49}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LolNerferino", "LolNerferino\LolNerferino\LolNerferino.csproj", "{D17AD52C-DA59-4B43-AFCE-216B2FDC0305}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2C50421E-53C0-4BC3-B1C1-55DAC3066C49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C50421E-53C0-4BC3-B1C1-55DAC3066C49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C50421E-53C0-4BC3-B1C1-55DAC3066C49}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{2C50421E-53C0-4BC3-B1C1-55DAC3066C49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C50421E-53C0-4BC3-B1C1-55DAC3066C49}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C50421E-53C0-4BC3-B1C1-55DAC3066C49}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{D17AD52C-DA59-4B43-AFCE-216B2FDC0305}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D17AD52C-DA59-4B43-AFCE-216B2FDC0305}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D17AD52C-DA59-4B43-AFCE-216B2FDC0305}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{D17AD52C-DA59-4B43-AFCE-216B2FDC0305}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D17AD52C-DA59-4B43-AFCE-216B2FDC0305}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D17AD52C-DA59-4B43-AFCE-216B2FDC0305}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2BF5EE57-3347-4124-9E32-C3B3B26F5C4C}
+	EndGlobalSection
+EndGlobal

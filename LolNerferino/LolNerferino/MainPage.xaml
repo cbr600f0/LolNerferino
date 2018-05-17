@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:LolNerferino"
+             x:Class="LolNerferino.MainPage"
+             BackgroundImage="firstpage.jpg">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="6*" />
+            <RowDefinition Height="4*" />
+        </Grid.RowDefinitions>
+        <Frame BackgroundColor="White"
+               Margin="32,0,32,21"
+               Padding="0"
+               Grid.Row="1">
+
+            <Frame BackgroundColor="Black"
+                   Margin="1"
+                   Padding="0">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1*" />
+                        <RowDefinition Height="1*" />
+                        <RowDefinition Height="1*" />
+                        <RowDefinition Height="1*" />
+                    </Grid.RowDefinitions>
+                    <Entry Placeholder="Summoner name please!"
+                           PlaceholderColor="Gray"
+                           TextColor="White"
+                           HorizontalTextAlignment="Center"
+                           Grid.Row="0"
+                           Text="{Binding SummonerName}" />
+                    <Button Text="Let's go!"
+                            TextColor="White"
+                            StyleClass="Primary"
+                            Clicked="CurrentGameButton_Clicked"
+                            Grid.Row="1" />
+                    <BoxView HeightRequest="1"
+                             Color="White"
+                             HorizontalOptions="Fill"
+                             VerticalOptions="Center"
+                             Margin="5"
+                             Grid.Row="2" />
+                    <Button Text="Match history"
+                            TextColor="White"
+                            Clicked="MatchHistoryButton_Clicked"
+                            BackgroundColor="Maroon"
+                            Grid.Row="3" />
+                </Grid>
+            </Frame>
+        </Frame>
+    </Grid>
+</ContentPage>
