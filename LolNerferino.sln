@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LolNerferino.Android", "Lol
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LolNerferino", "LolNerferino\LolNerferino\LolNerferino.csproj", "{D17AD52C-DA59-4B43-AFCE-216B2FDC0305}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LolApi", "LolApi\LolApi.csproj", "{FCEE1CD9-56B6-4346-B1C6-73AFA1301739}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,10 @@ Global
 		{D17AD52C-DA59-4B43-AFCE-216B2FDC0305}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D17AD52C-DA59-4B43-AFCE-216B2FDC0305}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D17AD52C-DA59-4B43-AFCE-216B2FDC0305}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{FCEE1CD9-56B6-4346-B1C6-73AFA1301739}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCEE1CD9-56B6-4346-B1C6-73AFA1301739}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCEE1CD9-56B6-4346-B1C6-73AFA1301739}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCEE1CD9-56B6-4346-B1C6-73AFA1301739}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
